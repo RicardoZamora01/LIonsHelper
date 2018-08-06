@@ -66,7 +66,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CCr-mk-YHf">
                                                             <rect key="frame" x="88" y="0.0" width="125" height="94"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcr-Jt-9Ex">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcr-Jt-9Ex">
                                                                     <rect key="frame" x="0.0" y="0.0" width="125" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                     <nil key="textColor"/>
@@ -90,6 +90,10 @@
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="CCr-mk-YHf" firstAttribute="top" secondItem="xU9-Jg-8oX" secondAttribute="top" id="H1y-Se-UQk"/>
+                                                        <constraint firstItem="Zyl-vF-4HP" firstAttribute="top" secondItem="xU9-Jg-8oX" secondAttribute="top" id="NCD-Io-vyR"/>
+                                                    </constraints>
                                                 </stackView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fZ-Na-R03">
                                                     <rect key="frame" x="294" y="10" width="80" height="100"/>
