@@ -8,20 +8,78 @@
 
 /* Begin PBXBuildFile section */
 		8CC49A552114C44D00B1EC91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49A542114C44D00B1EC91 /* AppDelegate.swift */; };
-		8CC49A572114C44D00B1EC91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49A562114C44D00B1EC91 /* ViewController.swift */; };
 		8CC49A5A2114C44D00B1EC91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A582114C44D00B1EC91 /* Main.storyboard */; };
 		8CC49A5C2114C44F00B1EC91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A5B2114C44F00B1EC91 /* Assets.xcassets */; };
 		8CC49A5F2114C44F00B1EC91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A5D2114C44F00B1EC91 /* LaunchScreen.storyboard */; };
+		8CC49A672114C47A00B1EC91 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49A662114C47A00B1EC91 /* CategoriesViewController.swift */; };
+		8CC49A6A2114C57200B1EC91 /* Teachers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A682114C57100B1EC91 /* Teachers.storyboard */; };
+		8CC49A6D2114C6D900B1EC91 /* Sports.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A6B2114C6D900B1EC91 /* Sports.storyboard */; };
+		8CC49A6F2114C75E00B1EC91 /* CategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49A6E2114C75E00B1EC91 /* CategoriesTableViewCell.swift */; };
+		8CC49A722114CACB00B1EC91 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A702114CACB00B1EC91 /* Schedule.storyboard */; };
+		8CC49A752114CD7100B1EC91 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A732114CD7100B1EC91 /* Calendar.storyboard */; };
+		8CC49A792114D42500B1EC91 /* calendar_two.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A782114D42500B1EC91 /* calendar_two.jpg */; };
+		8CC49A7C21150F1300B1EC91 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A7A21150F1300B1EC91 /* Events.storyboard */; };
+		8CC49A7E2116F89500B1EC91 /* TeachersStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49A7D2116F89500B1EC91 /* TeachersStruct.swift */; };
+		8CC49A862117062600B1EC91 /* TeachListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49A852117062600B1EC91 /* TeachListTableViewController.swift */; };
+		8CC49A892117127A00B1EC91 /* TeacherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49A882117127A00B1EC91 /* TeacherTableViewCell.swift */; };
+		8CC49A8B2118590B00B1EC91 /* Delaney.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A8A2118590B00B1EC91 /* Delaney.JPG */; };
+		8CC49A8D2118592700B1EC91 /* Delgado.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A8C2118592700B1EC91 /* Delgado.JPG */; };
+		8CC49A8F2118675800B1EC91 /* Duenas.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A8E2118675800B1EC91 /* Duenas.JPG */; };
+		8CC49A9121186AE900B1EC91 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A9021186AE900B1EC91 /* blank.png */; };
+		8CC49A932118B4D400B1EC91 /* Gorman.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A922118B4D400B1EC91 /* Gorman.JPG */; };
+		8CC49A952118B68000B1EC91 /* Ibarra.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A942118B68000B1EC91 /* Ibarra.JPG */; };
+		8CC49A972118B9B200B1EC91 /* Jefferies.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A962118B9B200B1EC91 /* Jefferies.JPG */; };
+		8CC49A992118BC1700B1EC91 /* Jenkins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A982118BC1700B1EC91 /* Jenkins.jpg */; };
+		8CC49A9B2118BC4000B1EC91 /* Korschun.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A9A2118BC4000B1EC91 /* Korschun.JPG */; };
+		8CC49A9D2118C0B100B1EC91 /* Lau.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A9C2118C0B100B1EC91 /* Lau.JPG */; };
+		8CC49A9F2118C13500B1EC91 /* Leathers.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49A9E2118C13500B1EC91 /* Leathers.JPG */; };
+		8CC49AA12118C16500B1EC91 /* Mack.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AA02118C16500B1EC91 /* Mack.JPG */; };
+		8CC49AA32118C1AC00B1EC91 /* McMillen.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AA22118C1AC00B1EC91 /* McMillen.jpeg */; };
+		8CC49AA52118C30100B1EC91 /* Mendez.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AA42118C30100B1EC91 /* Mendez.JPG */; };
+		8CC49AA72118C39A00B1EC91 /* Mesa.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AA62118C39A00B1EC91 /* Mesa.JPG */; };
+		8CC49AA92118C57500B1EC91 /* Novick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AA82118C57400B1EC91 /* Novick.jpg */; };
+		8CC49AAB2118C61700B1EC91 /* Rozo.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AAA2118C61700B1EC91 /* Rozo.JPG */; };
+		8CC49AAD2118C64700B1EC91 /* Sanchez.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AAC2118C64700B1EC91 /* Sanchez.JPG */; };
+		8CC49AAF2118C70500B1EC91 /* Sonnenberg.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AAE2118C70500B1EC91 /* Sonnenberg.JPG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8CC49A512114C44D00B1EC91 /* LionsHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionsHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC49A542114C44D00B1EC91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8CC49A562114C44D00B1EC91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8CC49A592114C44D00B1EC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CC49A5B2114C44F00B1EC91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CC49A5E2114C44F00B1EC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CC49A602114C44F00B1EC91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC49A662114C47A00B1EC91 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		8CC49A692114C57100B1EC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Teachers.storyboard; sourceTree = "<group>"; };
+		8CC49A6C2114C6D900B1EC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Sports.storyboard; sourceTree = "<group>"; };
+		8CC49A6E2114C75E00B1EC91 /* CategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		8CC49A712114CACB00B1EC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LionsHelper/Base.lproj/Schedule.storyboard; sourceTree = "<group>"; };
+		8CC49A742114CD7100B1EC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Calendar.storyboard; sourceTree = "<group>"; };
+		8CC49A782114D42500B1EC91 /* calendar_two.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = calendar_two.jpg; path = ../../../../Downloads/calendar_two.jpg; sourceTree = "<group>"; };
+		8CC49A7B21150F1300B1EC91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Events.storyboard; sourceTree = "<group>"; };
+		8CC49A7D2116F89500B1EC91 /* TeachersStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachersStruct.swift; sourceTree = "<group>"; };
+		8CC49A852117062600B1EC91 /* TeachListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachListTableViewController.swift; sourceTree = "<group>"; };
+		8CC49A882117127A00B1EC91 /* TeacherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeacherTableViewCell.swift; sourceTree = "<group>"; };
+		8CC49A8A2118590B00B1EC91 /* Delaney.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Delaney.JPG; path = ../../../../ew/Delaney.JPG; sourceTree = "<group>"; };
+		8CC49A8C2118592700B1EC91 /* Delgado.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Delgado.JPG; path = ../../../../ew/Delgado.JPG; sourceTree = "<group>"; };
+		8CC49A8E2118675800B1EC91 /* Duenas.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Duenas.JPG; path = ../../../../ew/Duenas.JPG; sourceTree = "<group>"; };
+		8CC49A9021186AE900B1EC91 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blank.png; path = ../../../../ew/blank.png; sourceTree = "<group>"; };
+		8CC49A922118B4D400B1EC91 /* Gorman.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Gorman.JPG; path = ../../../../ew/Gorman.JPG; sourceTree = "<group>"; };
+		8CC49A942118B68000B1EC91 /* Ibarra.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Ibarra.JPG; path = ../../../../ew/Ibarra.JPG; sourceTree = "<group>"; };
+		8CC49A962118B9B200B1EC91 /* Jefferies.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Jefferies.JPG; path = ../../../../ew/Jefferies.JPG; sourceTree = "<group>"; };
+		8CC49A982118BC1700B1EC91 /* Jenkins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Jenkins.jpg; path = ../../../../ew/Jenkins.jpg; sourceTree = "<group>"; };
+		8CC49A9A2118BC4000B1EC91 /* Korschun.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Korschun.JPG; path = ../../../../ew/Korschun.JPG; sourceTree = "<group>"; };
+		8CC49A9C2118C0B100B1EC91 /* Lau.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Lau.JPG; path = ../../../../ew/Lau.JPG; sourceTree = "<group>"; };
+		8CC49A9E2118C13500B1EC91 /* Leathers.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Leathers.JPG; path = ../../../../ew/Leathers.JPG; sourceTree = "<group>"; };
+		8CC49AA02118C16500B1EC91 /* Mack.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mack.JPG; path = ../../../../ew/Mack.JPG; sourceTree = "<group>"; };
+		8CC49AA22118C1AC00B1EC91 /* McMillen.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = McMillen.jpeg; path = ../../../../ew/McMillen.jpeg; sourceTree = "<group>"; };
+		8CC49AA42118C30100B1EC91 /* Mendez.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mendez.JPG; path = ../../../../ew/Mendez.JPG; sourceTree = "<group>"; };
+		8CC49AA62118C39A00B1EC91 /* Mesa.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Mesa.JPG; path = ../../../../ew/Mesa.JPG; sourceTree = "<group>"; };
+		8CC49AA82118C57400B1EC91 /* Novick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Novick.jpg; path = ../../../../ew/Novick.jpg; sourceTree = "<group>"; };
+		8CC49AAA2118C61700B1EC91 /* Rozo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Rozo.JPG; path = ../../../../ew/Rozo.JPG; sourceTree = "<group>"; };
+		8CC49AAC2118C64700B1EC91 /* Sanchez.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sanchez.JPG; path = ../../../../ew/Sanchez.JPG; sourceTree = "<group>"; };
+		8CC49AAE2118C70500B1EC91 /* Sonnenberg.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sonnenberg.JPG; path = ../../../../ew/Sonnenberg.JPG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +112,75 @@
 		8CC49A532114C44D00B1EC91 /* LionsHelper */ = {
 			isa = PBXGroup;
 			children = (
+				8CC49A872117125800B1EC91 /* Views */,
+				8CC49A842117044900B1EC91 /* ViewControllers */,
+				8CC49A822117036B00B1EC91 /* Storyboards */,
+				8CC49A7F2116F8FF00B1EC91 /* TeacherImages */,
+				8CC49A782114D42500B1EC91 /* calendar_two.jpg */,
 				8CC49A542114C44D00B1EC91 /* AppDelegate.swift */,
-				8CC49A562114C44D00B1EC91 /* ViewController.swift */,
-				8CC49A582114C44D00B1EC91 /* Main.storyboard */,
 				8CC49A5B2114C44F00B1EC91 /* Assets.xcassets */,
-				8CC49A5D2114C44F00B1EC91 /* LaunchScreen.storyboard */,
 				8CC49A602114C44F00B1EC91 /* Info.plist */,
+				8CC49A7D2116F89500B1EC91 /* TeachersStruct.swift */,
 			);
 			path = LionsHelper;
+			sourceTree = "<group>";
+		};
+		8CC49A7F2116F8FF00B1EC91 /* TeacherImages */ = {
+			isa = PBXGroup;
+			children = (
+				8CC49A982118BC1700B1EC91 /* Jenkins.jpg */,
+				8CC49A9E2118C13500B1EC91 /* Leathers.JPG */,
+				8CC49A9A2118BC4000B1EC91 /* Korschun.JPG */,
+				8CC49AA42118C30100B1EC91 /* Mendez.JPG */,
+				8CC49AAC2118C64700B1EC91 /* Sanchez.JPG */,
+				8CC49AA02118C16500B1EC91 /* Mack.JPG */,
+				8CC49A962118B9B200B1EC91 /* Jefferies.JPG */,
+				8CC49AAE2118C70500B1EC91 /* Sonnenberg.JPG */,
+				8CC49AA82118C57400B1EC91 /* Novick.jpg */,
+				8CC49AAA2118C61700B1EC91 /* Rozo.JPG */,
+				8CC49A9C2118C0B100B1EC91 /* Lau.JPG */,
+				8CC49AA22118C1AC00B1EC91 /* McMillen.jpeg */,
+				8CC49AA62118C39A00B1EC91 /* Mesa.JPG */,
+				8CC49A922118B4D400B1EC91 /* Gorman.JPG */,
+				8CC49A942118B68000B1EC91 /* Ibarra.JPG */,
+				8CC49A8C2118592700B1EC91 /* Delgado.JPG */,
+				8CC49A9021186AE900B1EC91 /* blank.png */,
+				8CC49A8E2118675800B1EC91 /* Duenas.JPG */,
+				8CC49A8A2118590B00B1EC91 /* Delaney.JPG */,
+			);
+			path = TeacherImages;
+			sourceTree = "<group>";
+		};
+		8CC49A822117036B00B1EC91 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8CC49A7A21150F1300B1EC91 /* Events.storyboard */,
+				8CC49A732114CD7100B1EC91 /* Calendar.storyboard */,
+				8CC49A702114CACB00B1EC91 /* Schedule.storyboard */,
+				8CC49A6B2114C6D900B1EC91 /* Sports.storyboard */,
+				8CC49A682114C57100B1EC91 /* Teachers.storyboard */,
+				8CC49A582114C44D00B1EC91 /* Main.storyboard */,
+				8CC49A5D2114C44F00B1EC91 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8CC49A842117044900B1EC91 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8CC49A662114C47A00B1EC91 /* CategoriesViewController.swift */,
+				8CC49A852117062600B1EC91 /* TeachListTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8CC49A872117125800B1EC91 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CC49A6E2114C75E00B1EC91 /* CategoriesTableViewCell.swift */,
+				8CC49A882117127A00B1EC91 /* TeacherTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +241,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC49A952118B68000B1EC91 /* Ibarra.JPG in Resources */,
 				8CC49A5F2114C44F00B1EC91 /* LaunchScreen.storyboard in Resources */,
+				8CC49A8F2118675800B1EC91 /* Duenas.JPG in Resources */,
+				8CC49A6D2114C6D900B1EC91 /* Sports.storyboard in Resources */,
+				8CC49AA32118C1AC00B1EC91 /* McMillen.jpeg in Resources */,
+				8CC49A6A2114C57200B1EC91 /* Teachers.storyboard in Resources */,
 				8CC49A5C2114C44F00B1EC91 /* Assets.xcassets in Resources */,
+				8CC49A9B2118BC4000B1EC91 /* Korschun.JPG in Resources */,
+				8CC49A932118B4D400B1EC91 /* Gorman.JPG in Resources */,
+				8CC49A9121186AE900B1EC91 /* blank.png in Resources */,
+				8CC49AAF2118C70500B1EC91 /* Sonnenberg.JPG in Resources */,
+				8CC49A9D2118C0B100B1EC91 /* Lau.JPG in Resources */,
+				8CC49AAB2118C61700B1EC91 /* Rozo.JPG in Resources */,
+				8CC49A8B2118590B00B1EC91 /* Delaney.JPG in Resources */,
+				8CC49A792114D42500B1EC91 /* calendar_two.jpg in Resources */,
+				8CC49AA72118C39A00B1EC91 /* Mesa.JPG in Resources */,
 				8CC49A5A2114C44D00B1EC91 /* Main.storyboard in Resources */,
+				8CC49A722114CACB00B1EC91 /* Schedule.storyboard in Resources */,
+				8CC49A992118BC1700B1EC91 /* Jenkins.jpg in Resources */,
+				8CC49A752114CD7100B1EC91 /* Calendar.storyboard in Resources */,
+				8CC49AA12118C16500B1EC91 /* Mack.JPG in Resources */,
+				8CC49AA92118C57500B1EC91 /* Novick.jpg in Resources */,
+				8CC49A8D2118592700B1EC91 /* Delgado.JPG in Resources */,
+				8CC49AAD2118C64700B1EC91 /* Sanchez.JPG in Resources */,
+				8CC49A7C21150F1300B1EC91 /* Events.storyboard in Resources */,
+				8CC49A972118B9B200B1EC91 /* Jefferies.JPG in Resources */,
+				8CC49A9F2118C13500B1EC91 /* Leathers.JPG in Resources */,
+				8CC49AA52118C30100B1EC91 /* Mendez.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +279,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CC49A572114C44D00B1EC91 /* ViewController.swift in Sources */,
 				8CC49A552114C44D00B1EC91 /* AppDelegate.swift in Sources */,
+				8CC49A672114C47A00B1EC91 /* CategoriesViewController.swift in Sources */,
+				8CC49A6F2114C75E00B1EC91 /* CategoriesTableViewCell.swift in Sources */,
+				8CC49A7E2116F89500B1EC91 /* TeachersStruct.swift in Sources */,
+				8CC49A892117127A00B1EC91 /* TeacherTableViewCell.swift in Sources */,
+				8CC49A862117062600B1EC91 /* TeachListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +305,46 @@
 				8CC49A5E2114C44F00B1EC91 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC49A682114C57100B1EC91 /* Teachers.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC49A692114C57100B1EC91 /* Base */,
+			);
+			name = Teachers.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC49A6B2114C6D900B1EC91 /* Sports.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC49A6C2114C6D900B1EC91 /* Base */,
+			);
+			name = Sports.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC49A702114CACB00B1EC91 /* Schedule.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC49A712114CACB00B1EC91 /* Base */,
+			);
+			name = Schedule.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC49A732114CD7100B1EC91 /* Calendar.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC49A742114CD7100B1EC91 /* Base */,
+			);
+			name = Calendar.storyboard;
+			sourceTree = "<group>";
+		};
+		8CC49A7A21150F1300B1EC91 /* Events.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CC49A7B21150F1300B1EC91 /* Base */,
+			);
+			name = Events.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,7 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 29DAMPFCJ4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LionsHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,7 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 29DAMPFCJ4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LionsHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
