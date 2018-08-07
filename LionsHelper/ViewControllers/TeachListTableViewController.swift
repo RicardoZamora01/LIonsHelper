@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-let allTeachers = ["Delaney", "Delgado", "Duenas", "Farias", "Gorman", "Ibarra", "Ides", "Jefferies", "Jenkins", "Korschun", "Lau", "Le", "Leathers", "Mack", "McMillen", "Mendez", "Mesa", "Novick", "Rozo", "Sanchez", "Sonnenberg", "Terrazas", "Werthmann", "White", "Coffey"]
+let allTeachers = ["Coffey", "Delaney", "Delgado", "Duenas", "Farias", "Gorman", "Ibarra", "Ides", "Jefferies", "Jenkins", "Korschun", "Lau", "Le", "Leathers", "Mack", "McMillen", "Mendez", "Mesa", "Novick", "Rozo", "Sanchez", "Sonnenberg", "Terrazas", "Werthmann", "White"]
 
 class TeachListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -180,11 +180,6 @@ class TeachListTableViewController: UIViewController, UITableViewDelegate, UITab
         default:
              break
         }
-        
-//        cell.teacherName.text = Teachers.Delaney.name
-//        cell.ccpaEmail.text = Teachers.Delaney.ccpaEmail
-//        cell.ousdEmail.text = Teachers.Delaney.ousdEmail
-//        cell.teacherImage.image = Teachers.Delaney.img
         return cell
     }
 }

@@ -41,6 +41,7 @@
 		8CC49AAB2118C61700B1EC91 /* Rozo.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AAA2118C61700B1EC91 /* Rozo.JPG */; };
 		8CC49AAD2118C64700B1EC91 /* Sanchez.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AAC2118C64700B1EC91 /* Sanchez.JPG */; };
 		8CC49AAF2118C70500B1EC91 /* Sonnenberg.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AAE2118C70500B1EC91 /* Sonnenberg.JPG */; };
+		8CC49AB1211A0F0300B1EC91 /* lion.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CC49AB0211A0F0300B1EC91 /* lion.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		8CC49AAA2118C61700B1EC91 /* Rozo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Rozo.JPG; path = ../../../../ew/Rozo.JPG; sourceTree = "<group>"; };
 		8CC49AAC2118C64700B1EC91 /* Sanchez.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sanchez.JPG; path = ../../../../ew/Sanchez.JPG; sourceTree = "<group>"; };
 		8CC49AAE2118C70500B1EC91 /* Sonnenberg.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Sonnenberg.JPG; path = ../../../../ew/Sonnenberg.JPG; sourceTree = "<group>"; };
+		8CC49AB0211A0F0300B1EC91 /* lion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lion.png; path = ../../../../ew/lion.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		8CC49A7F2116F8FF00B1EC91 /* TeacherImages */ = {
 			isa = PBXGroup;
 			children = (
+				8CC49AB0211A0F0300B1EC91 /* lion.png */,
 				8CC49A982118BC1700B1EC91 /* Jenkins.jpg */,
 				8CC49A9E2118C13500B1EC91 /* Leathers.JPG */,
 				8CC49A9A2118BC4000B1EC91 /* Korschun.JPG */,
@@ -267,6 +270,7 @@
 				8CC49AAD2118C64700B1EC91 /* Sanchez.JPG in Resources */,
 				8CC49A7C21150F1300B1EC91 /* Events.storyboard in Resources */,
 				8CC49A972118B9B200B1EC91 /* Jefferies.JPG in Resources */,
+				8CC49AB1211A0F0300B1EC91 /* lion.png in Resources */,
 				8CC49A9F2118C13500B1EC91 /* Leathers.JPG in Resources */,
 				8CC49AA52118C30100B1EC91 /* Mendez.JPG in Resources */,
 			);

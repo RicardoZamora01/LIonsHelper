@@ -18,22 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVO-Ix-c7O">
-                                <rect key="frame" x="129" y="457" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVO-Ix-c7O">
+                                <rect key="frame" x="37.5" y="542" width="300" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="6KE-vb-HXC"/>
+                                    <constraint firstAttribute="width" constant="300" id="K9B-Je-Tzu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="unf-Ag-1tn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lion's Helper" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCs-0z-zF7">
+                                <rect key="frame" x="85" y="110" width="206" height="44.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lion.png" translatesAutoresizingMaskIntoConstraints="NO" id="EhW-v5-7lo">
+                                <rect key="frame" x="62" y="234.5" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="VIo-We-HIt"/>
+                                    <constraint firstAttribute="height" constant="250" id="pEe-02-tfc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EhW-v5-7lo" firstAttribute="top" secondItem="PCs-0z-zF7" secondAttribute="bottom" constant="80" id="5Ac-9o-OUM"/>
+                            <constraint firstItem="PCs-0z-zF7" firstAttribute="centerX" secondItem="ucs-eu-g1f" secondAttribute="centerX" id="Ixb-eT-2RQ"/>
+                            <constraint firstItem="SVO-Ix-c7O" firstAttribute="centerX" secondItem="ucs-eu-g1f" secondAttribute="centerX" id="Ymu-KO-TCA"/>
+                            <constraint firstItem="EhW-v5-7lo" firstAttribute="centerX" secondItem="ucs-eu-g1f" secondAttribute="centerX" id="fmu-GA-JNa"/>
+                            <constraint firstItem="ucs-eu-g1f" firstAttribute="bottom" secondItem="SVO-Ix-c7O" secondAttribute="bottom" constant="25" id="mCh-C2-QhC"/>
+                            <constraint firstItem="PCs-0z-zF7" firstAttribute="top" secondItem="ucs-eu-g1f" secondAttribute="top" constant="90" id="oqE-9b-Yj7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ucs-eu-g1f"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZN7-gP-wle" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="-594"/>
+            <point key="canvasLocation" x="733.60000000000002" y="-594.15292353823088"/>
         </scene>
         <!--Categories View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -157,4 +182,7 @@
             <point key="canvasLocation" x="1906" y="-376"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lion.png" width="225" height="225"/>
+    </resources>
 </document>
