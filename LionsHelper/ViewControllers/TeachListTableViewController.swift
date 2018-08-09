@@ -8,12 +8,17 @@
 
 import Foundation
 import UIKit
+import MessageUI
+
 let allTeachers = ["Coffey", "Delaney", "Delgado", "Duenas", "Farias", "Gorman", "Ibarra", "Ides", "Jefferies", "Jenkins", "Korschun", "Lau", "Le", "Leathers", "Mack", "McMillen", "Mendez", "Mesa", "Novick", "Rozo", "Sanchez", "Sonnenberg", "Terrazas", "Werthmann", "White"]
 
-class TeachListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    // add a variable to hold a single teacher
-
+class TeachListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate {
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationItem.title = "Teachers"
+    }
+    @IBAction func sendEmail(_ sender: UIButton) {
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return allTeachers.count
     }
@@ -181,5 +186,10 @@ class TeachListTableViewController: UIViewController, UITableViewDelegate, UITab
              break
         }
         return cell
+    }
+    
+    func configureMailController() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController
+        
     }
 }

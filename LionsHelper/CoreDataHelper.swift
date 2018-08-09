@@ -21,4 +21,26 @@ struct CoreDataHelper {
         return context
     }()
     
+    static func save() {
+        do {
+            try context.save()
+        } catch let error {
+            print("Could not save \(error.localizedDescription)")
+        }
+    }
+    
+    static func retrieve() -> [Schedule] {
+        do {
+            let fetchRequest = NSFetchRequest<Schedule>(entityName: "Schedule")
+            let results = try context.fetch(fetchRequest)
+            return results
+        } catch let error {
+            print("Could not fetch \(error.localizedDescription)")
+            return []
+        }
+    }
+    static func newSchedule() -> Schedule {
+        let note = NSEntityDescription.insertNewObject(forEntityName: "Schedule", into: context) as! Schedule
+        return note
+    }
 }

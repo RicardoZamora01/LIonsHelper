@@ -45,6 +45,7 @@
 		8CC49AB4211A24A700B1EC91 /* Schedule.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49AB2211A24A700B1EC91 /* Schedule.xcdatamodeld */; };
 		8CC49AB6211A31BE00B1EC91 /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49AB5211A31BE00B1EC91 /* CoreDataHelper.swift */; };
 		8CC49AB8211A349B00B1EC91 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49AB7211A349B00B1EC91 /* ScheduleViewController.swift */; };
+		8CC49ABA211A5A1100B1EC91 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC49AB9211A5A1100B1EC91 /* CalendarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,8 @@
 		8CC49AB3211A24A700B1EC91 /* Schedule.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Schedule.xcdatamodel; sourceTree = "<group>"; };
 		8CC49AB5211A31BE00B1EC91 /* CoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 		8CC49AB7211A349B00B1EC91 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		8CC49AB9211A5A1100B1EC91 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		8CC49ABD211BB75800B1EC91 /* liontwo.svg */ = {isa = PBXFileReference; lastKnownFileType = text; path = liontwo.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,7 @@
 		8CC49A7F2116F8FF00B1EC91 /* TeacherImages */ = {
 			isa = PBXGroup;
 			children = (
+				8CC49ABD211BB75800B1EC91 /* liontwo.svg */,
 				8CC49AB0211A0F0300B1EC91 /* lion.png */,
 				8CC49A982118BC1700B1EC91 /* Jenkins.jpg */,
 				8CC49A9E2118C13500B1EC91 /* Leathers.JPG */,
@@ -180,8 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				8CC49A662114C47A00B1EC91 /* CategoriesViewController.swift */,
-				8CC49A852117062600B1EC91 /* TeachListTableViewController.swift */,
 				8CC49AB7211A349B00B1EC91 /* ScheduleViewController.swift */,
+				8CC49A852117062600B1EC91 /* TeachListTableViewController.swift */,
+				8CC49AB9211A5A1100B1EC91 /* CalendarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC49ABA211A5A1100B1EC91 /* CalendarViewController.swift in Sources */,
 				8CC49A552114C44D00B1EC91 /* AppDelegate.swift in Sources */,
 				8CC49A672114C47A00B1EC91 /* CategoriesViewController.swift in Sources */,
 				8CC49AB6211A31BE00B1EC91 /* CoreDataHelper.swift in Sources */,
@@ -494,7 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricardozamora.LionsHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -512,7 +518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ricardozamora.LionsHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

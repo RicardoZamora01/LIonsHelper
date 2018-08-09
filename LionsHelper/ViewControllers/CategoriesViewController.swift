@@ -9,11 +9,13 @@
 import Foundation
 import UIKit
 
-let categories = ["Teachers", "Sports", "Calendar", "Events", "My Schedule"]
+let categories = ["My Schedule", "Teachers", "Calendar", "Sports", "Events"]
 
 
 class CategoriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let segueIdentifiers = ["teachersSegue", "sportsSegue", "calendarSegue", "eventsSegue", "scheduleSegue"]
+    let segueIdentifiers = ["scheduleSegue", "teachersSegue", "calendarSegue", "sportsSegue", "eventsSegue"]
+    
+    var scheduleArray = CoreDataHelper.retrieve()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count
@@ -38,6 +40,5 @@ class CategoriesViewController: UIViewController, UITableViewDelegate, UITableVi
     }
 
     @IBAction func unwindWithSegue(_  segue: UIStoryboardSegue) {
-        
     }
 }
