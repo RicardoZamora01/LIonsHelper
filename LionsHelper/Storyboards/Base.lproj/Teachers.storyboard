@@ -104,9 +104,6 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbL-eo-BF4">
                                                             <rect key="frame" x="0.0" y="0.0" width="180" height="25"/>
                                                             <state key="normal" title="Email via OUSD"/>
-                                                            <connections>
-                                                                <action selector="sendOusdEmail:" destination="OeU-56-HNA" eventType="touchUpInside" id="idf-IU-XCJ"/>
-                                                            </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFG-UT-Z4e">
                                                             <rect key="frame" x="180" y="0.0" width="180" height="25"/>
@@ -115,9 +112,6 @@
                                                                 <constraint firstAttribute="height" constant="25" id="SRs-hc-sl6"/>
                                                             </constraints>
                                                             <state key="normal" title="Email via CCPA"/>
-                                                            <connections>
-                                                                <action selector="sendCcpaEmail:" destination="OeU-56-HNA" eventType="touchUpInside" id="coQ-uw-UvH"/>
-                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -138,6 +132,8 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="ccpaEmail" destination="Ond-F7-nW4" id="O7m-ar-Llv"/>
+                                            <outlet property="emailCCPAButton" destination="nFG-UT-Z4e" id="a4a-TT-R1m"/>
+                                            <outlet property="emailOUSDButton" destination="kbL-eo-BF4" id="S1h-ca-Fbm"/>
                                             <outlet property="ousdEmail" destination="rGr-1a-Dl1" id="BI7-e2-suQ"/>
                                             <outlet property="teacherImage" destination="6fZ-Na-R03" id="wKJ-fU-FsO"/>
                                             <outlet property="teacherName" destination="hcr-Jt-9Ex" id="egb-DY-T0k"/>
@@ -159,6 +155,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4V6-JW-CEL"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Ncp-xs-t7a" id="1rV-KC-sdm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ok6-Hj-tMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -126,7 +126,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ujl-Iv-Tmf"/>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="periodFive" destination="w3O-z4-mdA" id="PcW-6t-W0S"/>
                         <outlet property="periodFour" destination="Jcc-pK-mkQ" id="NMz-5d-aZQ"/>

@@ -15,4 +15,6 @@ class TeacherTableViewCell: UITableViewCell {
     @IBOutlet weak var ccpaEmail: UILabel!
     @IBOutlet weak var teacherName: UILabel!
     @IBOutlet weak var teacherImage: UIImageView!
+    @IBOutlet weak var emailOUSDButton: UIButton!
+    @IBOutlet weak var emailCCPAButton: UIButton!
 }

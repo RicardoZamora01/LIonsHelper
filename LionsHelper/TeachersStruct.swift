@@ -53,8 +53,8 @@ struct Teachers {
     }
     
     struct Ides {
-        static let name = "Ms. Ides \n "
-        static let ccpaEmail = "N/A \n "
+        static let name = "Ms. Ides \n"
+        static let ccpaEmail = "N/A \n"
         static let ousdEmail = "oriana.ides@ousd.org"
         static let img = #imageLiteral(resourceName: "blank.png")
     }
@@ -166,7 +166,7 @@ struct Teachers {
     
     struct Werthmann {
         static let name = "Mr. Werthmann \n"
-        static let ccpaEmail = ""
+        static let ccpaEmail = "N/A"
         static let ousdEmail = "jason.werthmann@ousd.org"
         static let img = #imageLiteral(resourceName: "blank.png")
     }
