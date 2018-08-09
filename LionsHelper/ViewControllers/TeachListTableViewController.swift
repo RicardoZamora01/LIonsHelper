@@ -13,18 +13,40 @@ import MessageUI
 let allTeachers = ["Coffey", "Delaney", "Delgado", "Duenas", "Farias", "Gorman", "Ibarra", "Ides", "Jefferies", "Jenkins", "Korschun", "Lau", "Le", "Leathers", "Mack", "McMillen", "Mendez", "Mesa", "Novick", "Rozo", "Sanchez", "Sonnenberg", "Terrazas", "Werthmann", "White"]
 
 class TeachListTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MFMailComposeViewControllerDelegate {
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationItem.title = "Teachers"
     }
-    @IBAction func sendEmail(_ sender: UIButton) {
+    
+    @IBAction func sendOusdEmail(_ sender: UIButton) {
+            configureMailController().setToRecipients([Teachers.Delaney.ousdEmail])
+        let mailComposeViewController = configureMailController()
+        if MFMailComposeViewController.canSendMail() {
+            self.present(mailComposeViewController, animated: true, completion: nil)
+        } else {
+            showMailError()
+        }
     }
+    
+    @IBAction func sendCcpaEmail(_ sender: UIButton) {
+    }
+    
+//    @IBAction func sendEmail(_ sender: UIButton) {
+//        let mailComposeViewController = configureMailController()
+//        if MFMailComposeViewController.canSendMail() {
+//            self.present(mailComposeViewController, animated: true, completion: nil)
+//        } else {
+//              showMailError()
+//           }
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return allTeachers.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return CGFloat(200)
+        return CGFloat(225)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -33,7 +55,7 @@ class TeachListTableViewController: UIViewController, UITableViewDelegate, UITab
         let current = allTeachers[indexPath.row]
         // switch on teacher variable, not Teacher class
         
-        switch current{
+        switch current {
         case "Delaney":
             cell.teacherName.text = Teachers.Delaney.name
             cell.ccpaEmail.text = Teachers.Delaney.ccpaEmail
@@ -189,7 +211,31 @@ class TeachListTableViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func configureMailController() -> MFMailComposeViewController {
-        let mailComposerVC = MFMailComposeViewController
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        //mailComposerVC.setToRecipients(["ricardozamora@ccpaedu.com"])
         
+        return mailComposerVC
     }
+    
+    func showMailError() {
+        let sendMailErrorAlert = UIAlertController(title: "Could not send email", message: "Your device could not send mail", preferredStyle: .alert)
+        
+        let dismiss = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        
+        sendMailErrorAlert.addAction(dismiss)
+        
+        self.present(sendMailErrorAlert, animated: true, completion: nil)
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
+
+
+
+
+

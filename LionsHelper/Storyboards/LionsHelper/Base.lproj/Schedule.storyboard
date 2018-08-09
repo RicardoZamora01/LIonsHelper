@@ -18,26 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ny3-KS-4vb">
-                                <rect key="frame" x="20" y="592" width="100" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="CTz-Zr-4uS"/>
-                                    <constraint firstAttribute="height" constant="50" id="u23-eo-dOH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="E7t-xl-i5d" kind="unwind" unwindAction="unwindWithSegue:" id="hE7-UI-dAt"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Schedule" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQG-UJ-FvW">
-                                <rect key="frame" x="107.5" y="45" width="159" height="32.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="XhW-r6-B1E">
-                                <rect key="frame" x="34" y="125" width="26" height="269"/>
+                                <rect key="frame" x="34" y="70" width="26" height="269"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VdW-UW-9QQ">
                                         <rect key="frame" x="0.0" y="0.0" width="26" height="23"/>
@@ -87,7 +69,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tgL-7M-1U6">
-                                <rect key="frame" x="107" y="125" width="200" height="270"/>
+                                <rect key="frame" x="107" y="70" width="200" height="270"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Period Class" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WcY-An-ctl">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
@@ -132,28 +114,20 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="3Ra-g5-3mG"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.85054837699999997" blue="0.27378223779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XhW-r6-B1E" firstAttribute="top" secondItem="Ujl-Iv-Tmf" secondAttribute="top" constant="105" id="KdF-2A-ADr"/>
-                            <constraint firstItem="AQG-UJ-FvW" firstAttribute="centerX" secondItem="Ujl-Iv-Tmf" secondAttribute="centerX" id="LIZ-fQ-WBF"/>
+                            <constraint firstItem="XhW-r6-B1E" firstAttribute="top" secondItem="Ujl-Iv-Tmf" secondAttribute="top" constant="50" id="KdF-2A-ADr"/>
                             <constraint firstItem="Ujl-Iv-Tmf" firstAttribute="trailing" secondItem="tgL-7M-1U6" secondAttribute="trailing" constant="68" id="OeO-1U-shX"/>
-                            <constraint firstItem="tgL-7M-1U6" firstAttribute="top" secondItem="AQG-UJ-FvW" secondAttribute="bottom" constant="48" id="gdB-Yp-Ss8"/>
-                            <constraint firstItem="Ujl-Iv-Tmf" firstAttribute="bottom" secondItem="Ny3-KS-4vb" secondAttribute="bottom" constant="25" id="kDL-jA-GwZ"/>
+                            <constraint firstItem="tgL-7M-1U6" firstAttribute="top" secondItem="Ujl-Iv-Tmf" secondAttribute="top" constant="50" id="fHe-lC-8Bc"/>
                             <constraint firstItem="XhW-r6-B1E" firstAttribute="leading" secondItem="Ujl-Iv-Tmf" secondAttribute="leading" constant="34" id="maJ-ki-I1o"/>
-                            <constraint firstItem="AQG-UJ-FvW" firstAttribute="top" secondItem="Ujl-Iv-Tmf" secondAttribute="top" constant="25" id="onR-gx-eMk"/>
-                            <constraint firstItem="Ny3-KS-4vb" firstAttribute="leading" secondItem="Ujl-Iv-Tmf" secondAttribute="leading" constant="20" id="rLV-XR-gvv"/>
                             <constraint firstItem="tgL-7M-1U6" firstAttribute="leading" secondItem="XhW-r6-B1E" secondAttribute="trailing" constant="47" id="uNT-Oo-MeF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ujl-Iv-Tmf"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <outlet property="backButton" destination="Ny3-KS-4vb" id="Hzd-s9-f8G"/>
                         <outlet property="periodFive" destination="w3O-z4-mdA" id="PcW-6t-W0S"/>
                         <outlet property="periodFour" destination="Jcc-pK-mkQ" id="NMz-5d-aZQ"/>
                         <outlet property="periodOne" destination="WcY-An-ctl" id="ZLL-Jy-bol"/>
@@ -164,7 +138,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Djt-96-gqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="E7t-xl-i5d" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2648.8000000000002" y="-542.87856071964018"/>
         </scene>

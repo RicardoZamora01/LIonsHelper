@@ -21,21 +21,13 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ncp-xs-t7a">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZHr-B3-1Dy">
-                                    <rect key="frame" x="0.0" y="199" width="414" height="34"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <state key="normal" title="Button"/>
-                                    <connections>
-                                        <action selector="sendEmail:" destination="OeU-56-HNA" eventType="touchUpInside" id="WWz-cz-LzE"/>
-                                    </connections>
-                                </button>
+                                <color key="backgroundColor" red="1" green="0.85054837699999997" blue="0.27378223779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeacherCell" rowHeight="171" id="LMy-fP-usQ" customClass="TeacherTableViewCell" customModule="LionsHelper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="171"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TeacherCell" rowHeight="225" id="LMy-fP-usQ" customClass="TeacherTableViewCell" customModule="LionsHelper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="225"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LMy-fP-usQ" id="ghr-J0-gT2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="170.66666666666666"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="224.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xU9-Jg-8oX">
@@ -70,19 +62,19 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="CCr-mk-YHf">
                                                             <rect key="frame" x="88" y="0.0" width="125" height="148"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcr-Jt-9Ex">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcr-Jt-9Ex">
                                                                     <rect key="frame" x="0.0" y="0.0" width="125" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-F7-nW4">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ond-F7-nW4">
                                                                     <rect key="frame" x="0.0" y="38" width="125" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGr-1a-Dl1">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGr-1a-Dl1">
                                                                     <rect key="frame" x="0.0" y="76" width="125" height="72"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                                     <nil key="textColor"/>
@@ -99,32 +91,62 @@
                                                         <constraint firstItem="Zyl-vF-4HP" firstAttribute="top" secondItem="xU9-Jg-8oX" secondAttribute="top" id="NCD-Io-vyR"/>
                                                     </constraints>
                                                 </stackView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fZ-Na-R03">
-                                                    <rect key="frame" x="274" y="11" width="120" height="150"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6fZ-Na-R03">
+                                                    <rect key="frame" x="269" y="37.333333333333343" width="120" height="150"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="150" id="ggp-Ws-V3t"/>
                                                         <constraint firstAttribute="width" constant="120" id="ses-vR-Kx5"/>
                                                     </constraints>
                                                 </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6w-lL-zRc">
+                                                    <rect key="frame" x="27.333333333333343" y="189" width="360" height="25"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbL-eo-BF4">
+                                                            <rect key="frame" x="0.0" y="0.0" width="180" height="25"/>
+                                                            <state key="normal" title="Email via OUSD"/>
+                                                            <connections>
+                                                                <action selector="sendOusdEmail:" destination="OeU-56-HNA" eventType="touchUpInside" id="idf-IU-XCJ"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFG-UT-Z4e">
+                                                            <rect key="frame" x="180" y="0.0" width="180" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="180" id="HTh-0h-L5C"/>
+                                                                <constraint firstAttribute="height" constant="25" id="SRs-hc-sl6"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Email via CCPA"/>
+                                                            <connections>
+                                                                <action selector="sendCcpaEmail:" destination="OeU-56-HNA" eventType="touchUpInside" id="coQ-uw-UvH"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="nFG-UT-Z4e" firstAttribute="height" secondItem="kbL-eo-BF4" secondAttribute="height" id="RG7-cJ-XeC"/>
+                                                        <constraint firstItem="nFG-UT-Z4e" firstAttribute="width" secondItem="kbL-eo-BF4" secondAttribute="width" id="vfe-T7-bYd"/>
+                                                    </constraints>
+                                                </stackView>
                                             </subviews>
+                                            <color key="backgroundColor" red="1" green="0.85054837699999997" blue="0.27378223779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="xU9-Jg-8oX" firstAttribute="leading" secondItem="ghr-J0-gT2" secondAttribute="leadingMargin" constant="25" id="1wj-6q-yor"/>
+                                                <constraint firstItem="K6w-lL-zRc" firstAttribute="centerX" secondItem="ghr-J0-gT2" secondAttribute="centerX" id="LDb-mW-jf4"/>
                                                 <constraint firstAttribute="trailing" secondItem="6fZ-Na-R03" secondAttribute="trailing" constant="25" id="Qpr-hg-L3n"/>
                                                 <constraint firstItem="6fZ-Na-R03" firstAttribute="centerY" secondItem="ghr-J0-gT2" secondAttribute="centerY" id="bhi-nl-Add"/>
                                                 <constraint firstItem="xU9-Jg-8oX" firstAttribute="top" secondItem="ghr-J0-gT2" secondAttribute="top" constant="25" id="mYr-dO-df1"/>
+                                                <constraint firstItem="K6w-lL-zRc" firstAttribute="bottom" secondItem="ghr-J0-gT2" secondAttribute="bottomMargin" id="nKM-TT-GJl"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="ccpaEmail" destination="Ond-F7-nW4" id="YYb-VN-JRw"/>
-                                            <outlet property="ousdEmail" destination="rGr-1a-Dl1" id="sR2-6R-2fi"/>
+                                            <outlet property="ccpaEmail" destination="Ond-F7-nW4" id="O7m-ar-Llv"/>
+                                            <outlet property="ousdEmail" destination="rGr-1a-Dl1" id="BI7-e2-suQ"/>
                                             <outlet property="teacherImage" destination="6fZ-Na-R03" id="wKJ-fU-FsO"/>
                                             <outlet property="teacherName" destination="hcr-Jt-9Ex" id="egb-DY-T0k"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="OeU-56-HNA" id="dTJ-vO-rWW"/>
-                                    <outlet property="delegate" destination="OeU-56-HNA" id="bH1-78-xng"/>
+                                    <outlet property="dataSource" destination="OeU-56-HNA" id="bcr-Lr-IUD"/>
+                                    <outlet property="delegate" destination="OeU-56-HNA" id="Avw-1d-xrE"/>
                                 </connections>
                             </tableView>
                         </subviews>

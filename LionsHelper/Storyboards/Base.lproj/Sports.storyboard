@@ -26,9 +26,9 @@
                                     <segue destination="qeT-FJ-O4T" kind="unwind" unwindAction="unwindWithSegue:" id="Lqo-gR-j6T"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwS-8Q-cYP">
-                                <rect key="frame" x="163" y="69" width="49" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming Soon..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwS-8Q-cYP">
+                                <rect key="frame" x="118" y="117" width="140.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -36,6 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SwS-8Q-cYP" firstAttribute="centerX" secondItem="wmx-Qt-wVP" secondAttribute="centerX" id="GSG-q9-bZu"/>
+                            <constraint firstItem="SwS-8Q-cYP" firstAttribute="top" secondItem="wmx-Qt-wVP" secondAttribute="top" constant="97" id="l0M-MR-kXc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wmx-Qt-wVP"/>
                     </view>
